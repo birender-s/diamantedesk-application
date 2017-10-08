@@ -2,19 +2,23 @@ parameters:
     database_driver: pdo_mysql
     database_host: 127.0.0.1
     database_port: 3306
-    database_name: diamantedesk
+    database_name: mysql
     database_user: root
-    database_password: '123456'
-    database_drop_full: true
+    database_password: 123456
     mailer_transport: mail
     mailer_host: null
     mailer_port: null
     mailer_encryption: null
     mailer_user: null
     mailer_password: null
-    websocket_host: 127.0.0.1
-    websocket_port: 8080
     session_handler: session.handler.native_file
     locale: en
     secret: ad77b831dff160b7f1aef954575e59b7
     installed: null
+    websocket_bind_address: 0.0.0.0
+    websocket_bind_port: 8080
+    websocket_frontend_host: '*'
+    websocket_frontend_port: 8080
+    websocket_backend_host: '*'
+    websocket_backend_port: 8080
+    assets_version: null
